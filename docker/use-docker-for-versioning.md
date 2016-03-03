@@ -1,6 +1,6 @@
 # Use docker for versioning your work
 
-You can use docker for versioning your work. It's not as nice as git, but it gets the job done.
+You can use docker for quickly versioning your work building an image. This is useful for places where you can't mount easily but don't want to lose progress
 
 Let's say you're running the image `tensor` in a container called `tensor_container`
 
