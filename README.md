@@ -38,6 +38,10 @@ _4 TILs and counting..._
 ### Python
 
 - [Time how long a computation takes](python/time-how-long-a-computation-takes.md)
+- 
+### Numpy
+
+- [Reshape with wildcards](numpy/reshape-with-wildcards.md)
 
 ### Life
 
