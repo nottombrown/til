@@ -21,7 +21,7 @@ _4 TILs and counting..._
 
 ### Docker
 
-- [Use docker for versioning](#docker/use-docker-for-versioning)
+- [Use docker for versioning](docker/use-docker-for-versioning.md)
 
 ### Git
 
@@ -37,7 +37,7 @@ _4 TILs and counting..._
 
 ### Python
 
-- [Placeholder](#)
+- [Time how long a computation takes](python/time-how-long-a-computation-takes.md)
 
 ### Life
 
