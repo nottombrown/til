@@ -12,9 +12,10 @@ _4 TILs and counting..._
 * [Docker](#docker)
 * [Git](#git)
 * [JavaScript](#javascript)
-* [Linux](#linux)
 * [Mac](#mac)
 * [Python](#python)
+* [TensorFlow](#tensorflow)
+* [Numpy](#numpy)
 * [Life](#life)
 
 ---
@@ -38,7 +39,14 @@ _4 TILs and counting..._
 ### Python
 
 - [Time how long a computation takes](python/time-how-long-a-computation-takes.md)
-- 
+- [Use with for setup and teardown](python/use-with-for-setup-and-teardown.md)
+- [Add a password to Jupyter](python/add-a-password-to-jupyter.md)
+- [Install Jupyter on Ubuntu](python/install-jupyter-on-ubuntu.md)
+
+### TensorFlow
+
+- [Run TensorFlow on EC2 GPUs](tensorflow/run-tensorflow-on-ec2-gpus.md)
+
 ### Numpy
 
 - [Reshape with wildcards](numpy/reshape-with-wildcards.md)
