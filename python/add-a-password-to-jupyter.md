@@ -16,8 +16,8 @@ Next, we’ll create the certificate.
 
 ``` bash
 cd ~
-mkdir certs
-cd certs
+mkdir .certs
+cd .certs
 certdir=$(pwd)
 openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.key -out mycert.pem
 # You'll be prompted to enter values for the cert,
@@ -36,22 +36,3 @@ c.NotebookApp.open_browser = False\\
 c.NotebookApp.password = u'$key'\\
 c.NotebookApp.port = 8888" .jupyter/jupyter_notebook_config.py
 ```
-
-Now whenever you want to run it again do
-
-```bash
-ssh -i $cert -t $user@$ip "screen -dR notebook"
-cd ~/udacity
-jupyter notebook --certfile=~/certs/mycert.pem --keyfile ~/certs/mycert.key
-```
-
-Press `ctrl-a` then `d` to exit the screen 
-
-## Open Jupyter in the browser
-
-``` bash
-# local
-open https://$ip:8888
-```
-
-You’ll get a security warning because your certificate you created above is not verified. To get through, click the Advanced link and proceed. At that point, you can enter the password you specified above.

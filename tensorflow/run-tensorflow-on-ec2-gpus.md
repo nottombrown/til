@@ -24,16 +24,7 @@ Make sure you open up port 22 for ssh and ports 443 and 8888 for accessing Jupyt
 | Custom | TCP | Rule |  TCP 8888    0.0.0.0/0
 
 
-## Log into your box
-As soon as your box finishes booting, it will serve Jupyter and should be accessible at:
-
-```
-https://your-ec2-instance.compute-1.amazonaws.com:8888
-```
-
-Enjoy!
-
-## Optional - SSH into your box
+## Start Jupyter
 
 You'll likely want to SSH into your box at some point in order to pull a new version of tensorflow or to update your Jupyter config in `~/.jupyter/jupyter_notebook_config.py`. Follow these instructions to SSH in.
 
@@ -63,12 +54,27 @@ Mine was `ec2-54-128-206-117.compute-1.amazonaws.com`
 SSH in:
 ``` bash
 # local 
-ip=ec2-54-128-206-117.compute-1.amazonaws.com
-user=ubuntu
-ssh -i $cert $user@$ip
+ssh -i $cert -t $user@$ip "screen -dR notebook"
+cd ~/udacity
+jupyter notebook --certfile=~/.certs/mycert.pem --keyfile ~/.certs/mycert.key
 ```
 
-## Optional - Add a password to Jupyter
+
+Press `ctrl-a` then `d` to exit the screen 
+
+## Open Jupyter in the browser
+
+``` bash
+# local
+open https://$ip:8888
+```
+
+You’ll get a security warning because your certificate you created above is not verified. To get through, click the Advanced link and proceed. At that point, you can enter the password you specified above.
+
+Success!
+
+#### Optional - Add a password to Jupyter
 
 This machine is disposable and not connected to anything else valuable, so it should be okay to leave it without auth. However if you'd ike to have things protected, you can follow these instructions to [add a password to jupyter](python/add-a-password-to-jupyter.md).
+
 
