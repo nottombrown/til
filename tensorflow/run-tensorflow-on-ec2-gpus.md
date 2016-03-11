@@ -1,6 +1,6 @@
 # Run TensorFlow on EC2 GPUs
 
-## Find a working AMI
+## Provision from a working AMI
 There's quite a bit that has to happen to get Tensorflow working on a GPU. It will take you [several hours to get working from scratch](http://eatcodeplay.com/installing-gpu-enabled-tensorflow-with-python-3-4-in-ec2/).
 
 You can skip this by using a working AMI. 
