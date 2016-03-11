@@ -5,10 +5,10 @@ There's quite a bit that has to happen to get Tensorflow working on a GPU. It wi
 
 You can skip this by using a working AMI. 
 
-I have an AMI that I built off of [@erikbern's TensorFlow GPU AMI](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=public-images;search=ami-cf5028a5;sort=name) ([provisioning script](https://gist.github.com/erikbern/78ba519b97b440e10640))
+There's an [AMI that I built off of @erikbern's TensorFlow GPU AMI](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=public-images;search=ami-8ed4d0e4;sort=name) ([provisioning script](https://gist.github.com/erikbern/78ba519b97b440e10640))
 
 
-To get it, go to [your ec2 dashboard](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=public-images;search=ami-933d39f9;sort=name) and search public repos for `ami-933d39f9`
+Go to [your ec2 dashboard](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=public-images;search=ami-8ed4d0e4;sort=name) and search public repos for `ami-8ed4d0e4`
 
 ## Configure your instance
 
@@ -19,9 +19,10 @@ Choose a `g2.2xlarge` instance with 32 GB of storage.
 Make sure you open up port 22 for ssh and ports 443 and 8888 for accessing Jupyter notebooks. You can choose to allow from any IPs (shown below) or limit to custom addresses if you’d prefer.
 
 | Type |    Protocol |    Port Range | Source
+|------|--------------|--------------|--------
 | SSH | TCP | 22 |   0.0.0.0/0
 | HTTPS |   TCP | 443 |  0.0.0.0/0
-| Custom | TCP | Rule |  TCP 8888    0.0.0.0/0
+| Custom TCP  Rule |  TCP |  8888  |   0.0.0.0/0
 
 
 ## Start Jupyter
@@ -54,11 +55,11 @@ Mine was `ec2-54-128-206-117.compute-1.amazonaws.com`
 SSH in:
 ``` bash
 # local 
-ssh -i $cert -t $user@$ip "screen -dR notebook"
-cd ~/udacity
+ip=ec2-54-128-206-117.compute-1.amazonaws.com
+
+ssh -i $cert -t ubuntu@$ip "screen -dR notebook"
 jupyter notebook --certfile=~/.certs/mycert.pem --keyfile ~/.certs/mycert.key
 ```
-
 
 Press `ctrl-a` then `d` to exit the screen 
 
