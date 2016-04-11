@@ -24,10 +24,6 @@ _10 TILs and counting..._
 
 - [Use docker for versioning](docker/use-docker-for-versioning.md)
 
-### Git
-
-- [Placeholder](#)
-
 ### Javascript
 
 - [Placeholder](#)
@@ -42,6 +38,8 @@ _10 TILs and counting..._
 - [Use with for setup and teardown](python/use-with-for-setup-and-teardown.md)
 - [Add a password to Jupyter](python/add-a-password-to-jupyter.md)
 - [Install Jupyter on Ubuntu](python/install-jupyter-on-ubuntu.md)
+  [Configure pylint](python/configure-pylint.md)
+  [Set up virtualenv](python/set-up-virtualenv.md)
 
 ### TensorFlow
 
