@@ -48,6 +48,7 @@ _10 TILs and counting..._
 ### Numpy
 
 - [Reshape with wildcards](numpy/reshape-with-wildcards.md)
+- [Transpose a Vector](numpy/transpose-a-vector.md)
 
 ### Life
 
