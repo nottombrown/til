@@ -1,9 +1,9 @@
-# TTL
+# TIDL
 
-> Today I Learned
+> Today I Deep Learned
 
 
-_10 TILs and counting..._
+_Tom goes deep into learning deep learning..._
 
 ---
 
@@ -20,8 +20,31 @@ _10 TILs and counting..._
 
 ---
 
-### Docker
+### TensorFlow
 
+- [Run TensorFlow on EC2 GPUs](tensorflow/run-tensorflow-on-ec2-gpus.md)
+
+### Numpy
+
+- [Reshape with wildcards](numpy/reshape-with-wildcards.md)
+- [Transpose a vector](numpy/transpose-a-vector.md)
+
+### Machine Learning
+
+- [Support vector machines (SVMs)](ml/support-vector-machines)
+
+
+### Python
+
+- [Time how long a computation takes](python/time-how-long-a-computation-takes.md)
+- [Use with for setup and teardown](python/use-with-for-setup-and-teardown.md)
+- [Configure pylint](python/configure-pylint.md)
+- [Set up virtualenv](python/set-up-virtualenv.md)
+
+
+### Ops
+- [Add a password to Jupyter](python/add-a-password-to-jupyter.md)
+- [Install Jupyter on Ubuntu](python/install-jupyter-on-ubuntu.md)
 - [Use docker for versioning](docker/use-docker-for-versioning.md)
 
 ### Javascript
@@ -32,27 +55,9 @@ _10 TILs and counting..._
 
 - [Placeholder](#)
 
-### Python
-
-- [Time how long a computation takes](python/time-how-long-a-computation-takes.md)
-- [Use with for setup and teardown](python/use-with-for-setup-and-teardown.md)
-- [Add a password to Jupyter](python/add-a-password-to-jupyter.md)
-- [Install Jupyter on Ubuntu](python/install-jupyter-on-ubuntu.md)
-  [Configure pylint](python/configure-pylint.md)
-  [Set up virtualenv](python/set-up-virtualenv.md)
-
-### TensorFlow
-
-- [Run TensorFlow on EC2 GPUs](tensorflow/run-tensorflow-on-ec2-gpus.md)
-
-### Numpy
-
-- [Reshape with wildcards](numpy/reshape-with-wildcards.md)
-- [Transpose a Vector](numpy/transpose-a-vector.md)
-
 ### Life
 
-- [Placeholder](#)
+- [Use categories when negotiation](life/use-categories-when-negotiating.md)
 
 
 ## About
